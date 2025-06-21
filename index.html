@@ -82,20 +82,21 @@
             <p><strong>BIC (SWIFT):</strong> INGBROBUXXX</p>
             <p><strong>Detalii plată:</strong> " Donație transplant "</p>
             <button class="btn-copy" onclick="copyIBAN()">Copiază IBAN și deschide ING</button>
-        </div>
-        <div class="hashtags">
-            #SalveazaViataLuiGabriel #DonatiiPentruGabriel #LuptaCuLeucemia #GabrielAreNevoieDeNoi #SansaLaViata
-        </div>
+        <div class="donatii">
+    <p><strong>🔴 Hai să-i fim SPERANȚĂ. Să-l ajutăm să aibă o viață sănătoasă.</strong></p>
+    <p><strong>📍Beneficiar:</strong> Gabriel Florin Dobre</p>
+    <p><strong>IBAN:</strong> <span id="iban">RO15INGB0000999915310830</span></p>
+    <p><strong>BIC (SWIFT):</strong> INGBROBUXXX</p>
+    <p><strong>Detalii plată:</strong> " Donație transplant "</p>
+    <button class="btn-copy" onclick="copyIBAN()">Copiază IBAN și deschide ING</button>
+    <div style="margin-top: 30px;">
+        <p><strong>Donează instant cu telefonul:</strong><br>
+        1. Deschide aplicația ta bancară.<br>
+        2. Alege opțiunea “Plată prin QR” sau “Scanare QR”.<br>
+        3. Scanează codul QR de mai jos.<br>
+        4. Confirmă detaliile și efectuează transferul.<br>
+        </p>
+        <img src="sepa_qr.png" alt="QR Code SEPA - Donație Gabriel Florin Dobre" style="max-width:220px; margin:20px auto; display:block;"/>
+        <p style="font-size:14px; color:#555;">*Codul QR funcționează cu majoritatea aplicațiilor bancare din România.</p>
     </div>
-    <script>
-        function copyIBAN() {
-            const iban = document.getElementById("iban").textContent;
-            navigator.clipboard.writeText(iban).then(function() {
-                window.open("https://www.ing.ro", "_blank");
-            }, function(err) {
-                alert("Eroare la copierea IBAN-ului. Te rugăm să încerci manual.");
-            });
-        }
-    </script>
-</body>
-</html>
+</div>

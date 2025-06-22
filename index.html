@@ -1,115 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Împreună pentru Gabriel Florin Dobre</title>
+    <title>Împreună pentru Gabriel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fdfdfd;
-            margin: 0;
+            background-color: #f9f9f9;
             padding: 20px;
-            color: #333;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: auto;
-            text-align: center;
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #5c3d2e;
+            color: #c0392b;
+            text-align: center;
         }
         p {
-            font-size: 18px;
             line-height: 1.6;
-            text-align: justify;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 20px 0;
-        }
-        .donatii {
-            background-color: #fff3e6;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
+        .iban-box {
+            background-color: #ffecec;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
         }
         .btn-copy {
-            background-color: #8B4513;
+            background-color: #3498db;
             color: white;
             border: none;
-            padding: 15px 25px;
-            font-size: 16px;
-            border-radius: 8px;
+            padding: 6px 12px;
+            margin-left: 10px;
             cursor: pointer;
-            margin-top: 15px;
+            border-radius: 5px;
         }
         .btn-copy:hover {
-            background-color: #5c2e0d;
-        }
-        #copiat {
-            margin-top: 10px;
-            color: green;
-            font-weight: bold;
-            display: none;
-        }
-        .hashtags {
-            margin-top: 20px;
-            font-weight: bold;
-            font-size: 16px;
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Împreună pentru Gabriel Florin Dobre</h1>
-        <img src="campaign_image_resized.jpg" alt="Gabriel Florin Dobre">
-        <p>
-            Gabriel Florin Dobre are doar 20 de ani. La vârsta la care ar trebui să meargă la facultate, să-și facă planuri pentru viitor și să se bucure de fiecare zi, el luptă pentru viața lui. A fost diagnosticat cu leucemie acută, o formă agresivă de cancer al sângelui.
-        </p>
-        <p>
-            Boala a venit pe neașteptate. În doar câteva săptămâni, Gabriel a trecut de la o viață normală la saloanele reci ale spitalului Fundeni. A început o primă cură de chimioterapie dură, pe care a dus-o cu o tărie impresionantă. Este la a doua cură, mai complexă.
-        </p>
-        <p>
-            Medicii au fost sinceri: spunând ca șansă lui de vindecare mai rapida cu rezultate pozitive este un transplant de celule stem,  într-o clinică specializată din Milano.  Costul tratamentului, intervenției și perioadei post-operatorii ajunge la 250.000 de euro. Este o sumă....  dar nu imposibil de strâns, de acceea apelăm la ajutorul vostru.
-        </p>
-        <p>
-            Fiecare donație înseamnă o zi câștigată. Fiecare distribuire îl poate aduce mai aproape de salvare.
-            Nu lăsa ca timpul să treacă fără să faci ceva. El are nevoie de noi acum.
-        </p>
-        <p>
-            🔴 Hai să-i fim SPERANȚĂ. Să-l ajutăm să aibă o viață sănătoasă.
-        </p>
-        <div class="donatii">
-            <p><strong>📍Beneficiar:</strong> Gabriel Florin Dobre</p>
-            <p><strong>IBAN:</strong> <span id="iban">RO15INGB0000999915310830</span></p>
-            <p><strong>BIC (SWIFT code):</strong> INGBROBUXXX</p>
-            <br>
-<p><strong>IBAN (Revolut EURO/LEI):</strong> 
-<span id="iban-revolut">RO07REVO0000101213085502</span>  
-<p><strong>BIC/SWIFT (Revolut):</strong> REVOROBB</p>
-            <p><strong>Detalii plată:</strong> " Donație transplant "</p>
-            <button class="btn-copy" onclick="copyIBAN()">📋 Copiază IBAN</button>
-            <div id="copiat">✅ IBAN copiat în clipboard!</div>
+
+        <p>Gabriel Florin Dobre are doar 20 de ani. La vârsta la care ar trebui să meargă la facultate, să-și facă planuri pentru viitor și să se bucure de fiecare zi, el luptă pentru viața lui. A fost diagnosticat cu leucemie acută, o formă agresivă de cancer al sângelui.</p>
+
+        <p>Boala a venit pe neașteptate. În doar câteva săptămâni, Gabriel a trecut de la o viață normală la saloanele reci ale spitalului Fundeni. A început o primă cură de chimioterapie dură, pe care a dus-o cu o tărie impresionantă. Este la a doua cură, mai complexă.</p>
+
+        <p>Medicii au fost sinceri: spunând ca șansă lui de vindecare mai rapidă cu rezultate pozitive este un transplant de celule stem, într-o clinică specializată din Milano. Costul tratamentului, intervenției și perioadei post-operatorii ajunge la 250.000 de euro. Este o sumă... dar nu imposibil de strâns, de aceea apelăm la ajutorul vostru.</p>
+
+        <p>Fiecare donație înseamnă o zi câștigată. Fiecare distribuire îl poate aduce mai aproape de salvare. Nu lăsa ca timpul să treacă fără să faci ceva. El are nevoie de noi acum.</p>
+
+        <p><strong>🔴 Hai să-i fim SPERANȚĂ. Să-l ajutăm să aibă o viață sănătoasă.</strong></p>
+
+        <div class="iban-box">
+            <p><strong>📍 Beneficiar:</strong> Gabriel Florin Dobre</p>
+
+            <p><strong>IBAN ING:</strong>
+            <span id="iban-ing">RO15INGB0000999915310830</span>
+            <button class="btn-copy" onclick="copyIBAN('iban-ing')">Copiază IBAN ING</button></p>
+
+            <p><strong>BIC (SWIFT code ING):</strong> INGBROBUXXX</p>
+
+            <p><strong>IBAN Revolut EURO/LEI:</strong>
+            <span id="iban-revolut">RO07REVO0000101213085502</span>
+            <button class="btn-copy" onclick="copyIBAN('iban-revolut')">Copiază IBAN Revolut</button></p>
+
+            <p><strong>BIC/SWIFT (Revolut):</strong> REVOROBB</p>
+
+            <p><strong>Detalii plată:</strong> "Donație transplant"</p>
         </div>
-        <div class="hashtags">
-            #SalveazaViataLuiGabriel #DonatiiPentruGabriel #LuptaCuLeucemia #GabrielAreNevoieDeNoi #SansaLaViata
-        </div>
+
+        <p>#SalveazaViataLuiGabriel #DonatiiPentruGabriel #LuptaCuLeucemia #GabrielAreNevoieDeNoi #SansaLaViata</p>
     </div>
+
     <script>
-function copyIBAN(id) {
-  const iban = document.getElementById(id).textContent;
-  navigator.clipboard.writeText(iban).then(function () {
-    alert("IBAN copiat: " + iban);
-  }, function(err) {
-    alert("Nu s-a putut copia. Te rugăm copiază manual: " + iban);
-  });
-}
-</script>
+        function copyIBAN(id) {
+            const iban = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(iban).then(function () {
+                alert("IBAN copiat: " + iban);
+            }, function (err) {
+                alert("Nu s-a putut copia. Te rugăm să copiezi manual: " + iban);
             });
         }
     </script>

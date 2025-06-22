@@ -104,12 +104,15 @@
         </div>
     </div>
     <script>
-        function copyIBAN() {
-            const iban = document.getElementById("iban").textContent;
-            navigator.clipboard.writeText(iban).then(function() {
-                document.getElementById("copiat").style.display = "block";
-            }, function(err) {
-                alert("Nu s-a putut copia. Te rugăm copiază manual: " + iban);
+function copyIBAN(id) {
+  const iban = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(iban).then(function () {
+    alert("IBAN copiat: " + iban);
+  }, function(err) {
+    alert("Nu s-a putut copia. Te rugăm copiază manual: " + iban);
+  });
+}
+</script>
             });
         }
     </script>
